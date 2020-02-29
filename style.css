@@ -11,23 +11,70 @@ p {
     line-height: 21px;
 }
 
+
+
 h1 {
     color: #ffc;
-    background-color: #0fa76e;
+    background-color: #6a1616;
     font-size: 2em;
     margin: 0;
-    margin-bottom: 7px;
     padding: 4px;
     font-style: bold;
     text-align: center;
     letter-spacing: 0.5em;
 }
 
+/* Navigation bar styles */
+
+.navigation {
+    background-color: #6a1616;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: #ffc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    background-color: rgb(61, 134, 218);
+    color: white;
+}
+
+.navigation a.active {
+    background-color: rgb(138, 63, 50);
+    color: #ffc;
+}
+
+.navigation .icon {
+    display: none;
+}
+
+/*When the screen is less than 600 pizels wide, hide all links, except for the first one labeled "Home".
+Show the link that contains should open and close the topnav (.icon)*/
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/*The "*/
+
 h2 {
     color: white;
-    background-color: #090;
+    background-color: rgb(43, 100, 43);
     font-size: 1.5em;
     margin: 0;
+    margin-bottom: 5px;
     padding: 2px;
     padding-left: 14px;
 }
@@ -35,12 +82,6 @@ h2 {
 h3 {
     color: #000000;
     font-size: 1.25em;
-}
-
-img {
-    border-style: dashed;
-    border-width: 2px;
-    border-color: #ccc;
 }
 
 li {
