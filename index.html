@@ -10,25 +10,36 @@
     </head>
 
     <body>
-
-        <!-- This is the main intro of the webpage -->
-        <div id="intro">
+        <!-- The main header with my name and nav links to other parts of the webpage -->
+        <header>
             <h1>Zackery Crews</h1>
-            <h2>Software Developer / IT Technician</h2>
-            <p>
-                <span><img title="I'm a tool tip, Hello there!~~" src="images/suit_300x420.jpg" alt="Me In A Suit" height="420" width="300"></span>
-                A Senior at UNF and an aspiring Software Developer / IT Technician that is currently searching for an 
-                internship to start their career and flesh out their resume. I'm a fast learner who is very quick to
-                adapt to new environments of all kinds. I always carry a detective mindset due to my love for learning
-                and knowledge. This mindset makes problem solving and quick decisions easy to overcome.
-            </p>
-        </div>
-
-        <!-- This section is my picture and comments around it -->
+            <div class="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="school/history.html">School History</a>
+                <a href="projects/index.html">Projects</a>
+                <a href="javascript:void(0);" class="icon" onclick="myfunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
         
+        <div>
+            <h2>Software Developer / IT Technician</h2>
+            <section class="intro-image">
+                <img id="self-image" title="I'm a tool tip, Hello there!~~" src="images/suit_300x420.jpg" alt="Me In A Suit">
+            </section>
+            <aside class="intro-text">
+                <p>
+                    A Senior at UNF and an aspiring Software Developer / IT Technician that is currently searching for an 
+                    internship to start their career and flesh out their resume. I'm a fast learner who is very quick to
+                    adapt to new environments of all kinds. I always carry a detective mindset due to my love for learning
+                    and knowledge. This mindset makes problem solving and quick decisions easy to overcome.
+                </p>
+            </aside>
+        </div>        
 
         <!-- Skills section -->
-        <div id="skills">
+        <section id="skills-1">
             <h2>Main Skills</h2>
             
             <ul>
