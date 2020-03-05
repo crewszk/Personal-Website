@@ -1,0 +1,59 @@
+/* Navigation bar styles */
+
+.navigation {
+    background-color: #6a1616;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: #ffc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    background-color: rgb(61, 134, 218);
+    color: white;
+}
+
+.navigation a.active {
+    background-color: rgb(138, 63, 50);
+    color: #ffc;
+}
+
+.navigation .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pizels wide, hide all links, except for the first one labeled "Home".
+Show the link that contains should open and close the navigation (.icon) */
+@media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the navigation bar with JavaScript when the user clicks on the icon.
+This class makes the navigation bar look good on small screens (display links vertically instead of
+horizontally) */
+@media screen and (max-width: 600px) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
