@@ -1,0 +1,16 @@
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.intro p {
+    max-width: 600px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
